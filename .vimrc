@@ -89,7 +89,7 @@ ca a A
 " syntax hilighting for lxkbb files
 :au!    BufRead,BufNewFile *.conf,*.bb,*.bbclass,*.inc,*.target  set filetype=lxkbb
 
-":highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
 :au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 :au InsertLeave * match ExtraWhitespace /\s\+$/
@@ -102,6 +102,7 @@ ca a A
 "colorscheme chlordane
 "colorscheme coffee
 "colorscheme darkdevel
+colorscheme zellner
 ":hi Normal       guibg=black       guifg=white
 "  hi Cursor	      ctermbg=red       ctermfg=DarkGray
 "  hi Comment	   ctermfg=DarkGray  guifg=#808080
