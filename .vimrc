@@ -89,10 +89,6 @@ ca a A
 " syntax hilighting for lxkbb files
 :au!    BufRead,BufNewFile *.conf,*.bb,*.bbclass,*.inc,*.target  set filetype=lxkbb
 
-:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-
-:au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-:au InsertLeave * match ExtraWhitespace /\s\+$/
 
 :source /users/nturner/.vim/plugins/a.vim
 :source /users/nturner/.vim/plugins/file:colon.vim
@@ -160,6 +156,10 @@ syn match  javaDocParam contained "\s\S\+"
 syn match  javaDocTags  contained "@\(version\|author\|return\|deprecated\|since\)\>"
 syntax case match
 
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+
+:au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+:au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " setup a handy command for running git grep on the current working directory
 "fun GitGrep(...) 
