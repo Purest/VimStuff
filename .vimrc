@@ -98,7 +98,7 @@ ca a A
 "colorscheme chlordane
 "colorscheme coffee
 "colorscheme darkdevel
-colorscheme zellner
+colorscheme wuye
 ":hi Normal       guibg=black       guifg=white
 "  hi Cursor	      ctermbg=red       ctermfg=DarkGray
 "  hi Comment	   ctermfg=DarkGray  guifg=#808080
