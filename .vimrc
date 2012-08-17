@@ -21,6 +21,9 @@ set hidden
 set showcmd
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
+" show status bar even if only one buffer open
+set laststatus=2
+
 " tell me which mode I'm in
 set showmode
 
