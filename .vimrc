@@ -90,9 +90,9 @@ ca a A
 :au!    BufRead,BufNewFile *.conf,*.bb,*.bbclass,*.inc,*.target  set filetype=lxkbb
 
 
-:source /users/nturner/.vim/plugins/a.vim
-:source /users/nturner/.vim/plugins/file:colon.vim
-:source /users/nturner/.vim/plugins/ScrollColor.vim
+call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
+call pathogen#helptags()
 
 " COLORS, beautiful colors!
 "colorscheme chlordane
