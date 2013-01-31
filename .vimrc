@@ -77,6 +77,7 @@ imap jj  <Esc>
 command -nargs=? G :grep <f-args> 
 
 set wildmode=list:longest,full
+set wildmenu
 
 " turn off the annoying parentheses matching
 let loaded_matchparen = 1
