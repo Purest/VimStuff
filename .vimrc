@@ -102,7 +102,7 @@ call pathogen#helptags()
 "colorscheme chlordane
 "colorscheme coffee
 "colorscheme darkdevel
-colorscheme wuye
+colorscheme seths
 ":hi Normal       guibg=black       guifg=white
 "  hi Cursor	      ctermbg=red       ctermfg=DarkGray
 "  hi Comment	   ctermfg=DarkGray  guifg=#808080
