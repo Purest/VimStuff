@@ -71,7 +71,7 @@ map <F6> :0r !mls-create-file.rb cpp<CR>
 map <silent><F8> :PREVCOLOR<cr>
 map <silent><F9> :NEXTCOLOR<cr> 
 
-imap kj  <Esc>
+imap jj  <Esc>
 
 " setup an alias for grepping w/ less typing
 command -nargs=? G :grep <f-args> 
