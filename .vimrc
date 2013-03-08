@@ -1,4 +1,8 @@
+" infect me
+call pathogen#infect()
+execute pathogen#infect()
 " set up auto indentation
+filetype off
 filetype indent on
 set cinoptions+=g0,(0
 
