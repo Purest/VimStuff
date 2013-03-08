@@ -89,6 +89,9 @@ let loaded_matchparen = 1
 " syntax hilighting is a GOOD thing
 syntax on
 
+" slow editing on longlines is a BAD thing
+set synmaxcol=356
+
 autocmd BufRead,BufNewFile *.mak,Makefile set noet sw=8 sts=8
 ca a A
 " syntax hilighting for actionscript files
