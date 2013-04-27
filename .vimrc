@@ -99,6 +99,7 @@ ca a A
 " syntax hilighting for lxkbb files
 :au!    BufRead,BufNewFile *.conf,*.bb,*.bbclass,*.inc,*.target  set filetype=lxkbb
 
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 expandtab 
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
