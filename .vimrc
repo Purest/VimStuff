@@ -1,9 +1,8 @@
+filetype off
 " infect me
 call pathogen#infect()
-execute pathogen#infect()
 " set up auto indentation
-filetype off
-filetype indent on
+filetype plugin indent on
 set cinoptions+=g0,(0
 
 " allow backspacing over text that was entered under a different
