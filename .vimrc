@@ -1,6 +1,9 @@
 filetype off
 " infect me
 call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " set up auto indentation
 filetype plugin indent on
 set cinoptions+=g0,(0
@@ -30,9 +33,12 @@ set laststatus=2
 " tell me which mode I'm in
 set showmode
 
+" expand tabs out to spaces
+set expandtab
+
 " set tabs and shifts to 3 spaces
 set shiftwidth=4
-set sts=4
+set sts=4 softtabstop=4
 
 " not 100% what this does :)
 set background=dark
@@ -40,14 +46,11 @@ set background=dark
 " turn on line numbers
 set nu
 
-" expand tabs out to spaces
-set et
-
 " highlight search matches
 set hls
 
-" set up my tags
-" set tags=/users/moore/.tags
+" set up tags
+set tags=./tags;
 
 map \b :buffers<CR>
 
@@ -72,12 +75,12 @@ map <F5> :grep -w <C-R><C-W><CR>
 map <F6> :0r !mls-create-file.rb cpp<CR>
 
 map <silent><F8> :PREVCOLOR<cr>
-map <silent><F9> :NEXTCOLOR<cr> 
+map <silent><F9> :NEXTCOLOR<cr>
 
 imap jj  <Esc>
 
 " setup an alias for grepping w/ less typing
-command -nargs=? G :grep <f-args> 
+command -nargs=? G :grep <f-args>
 
 set wildmode=list:longest,full
 set wildmenu
@@ -99,11 +102,7 @@ ca a A
 " syntax hilighting for lxkbb files
 :au!    BufRead,BufNewFile *.conf,*.bb,*.bbclass,*.inc,*.target  set filetype=lxkbb
 
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 expandtab 
-
-call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
-call pathogen#helptags()
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 expandtab
 
 " COLORS, beautiful colors!
 "colorscheme chlordane
