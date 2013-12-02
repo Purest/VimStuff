@@ -61,7 +61,7 @@ map <F4> :cn<CR>
 map <F7> @1
 
 " helpers
-set grepprg=ack
+set grepprg=agg
 
 " force text auto-wrapping
 " set textwidth=80
