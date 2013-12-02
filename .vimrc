@@ -21,6 +21,8 @@ set rulerformat=%25([%{&fileformat}]%14(%l,%c%V%)%=%4P%)
 " and keep an undo history for multiple files.
 set hidden
 
+" create whitelist highlighting "list" mode use `:set list` to enable
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 " show me info about commands in the status line
 set showcmd
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
