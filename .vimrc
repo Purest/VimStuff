@@ -70,8 +70,6 @@ set grepprg=agg
 " -w for ack syntax
 map <F5> :grep -w <C-R><C-W><CR>
 
-map <F6> :0r !mls-create-file.rb cpp<CR>
-
 map <silent><F8> :PREVCOLOR<cr>
 map <silent><F9> :NEXTCOLOR<cr>
 
