@@ -48,7 +48,7 @@ set nu
 set hls
 
 " set up tags
-set tags=./tags;
+set tags=./.tags;$HOME
 
 map \b :buffers<CR>
 
