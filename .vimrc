@@ -1,8 +1,6 @@
 filetype off
 " infect me
-call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " set up auto indentation
 filetype plugin indent on
