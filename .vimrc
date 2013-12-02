@@ -69,6 +69,8 @@ map <F5> :grep --column <C-R><C-W><CR>
 " force text auto-wrapping
 " set textwidth=80
 
+" Hack for NERDTree if on non-utf8 terms.
+let g:NERDTreeDirArrows=0
 
 map <silent><F8> :PREVCOLOR<cr>
 map <silent><F9> :NEXTCOLOR<cr>
