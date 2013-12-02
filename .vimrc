@@ -62,13 +62,13 @@ map <F7> @1
 
 " helpers
 set grepprg=agg
+let g:agprg="$HOME/bin/agg --column"
+" search for the word under the cursor
+map <F5> :grep --column <C-R><C-W><CR>
 
 " force text auto-wrapping
 " set textwidth=80
 
-" search for the word under the cursor
-" -w for ack syntax
-map <F5> :grep -w <C-R><C-W><CR>
 
 map <silent><F8> :PREVCOLOR<cr>
 map <silent><F9> :NEXTCOLOR<cr>
